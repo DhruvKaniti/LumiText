@@ -15,9 +15,6 @@ import google.generativeai as genai
 import streamlit as st
 
 
-
-load_dotenv()
-
 gemini_api_key = st.secrets["gemini"]["api_key"]
 if not gemini_api_key:
     raise ValueError("GEMINI API KEY not found!")
